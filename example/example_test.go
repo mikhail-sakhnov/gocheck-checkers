@@ -1,7 +1,7 @@
 package type_test
 
 import (
-	. "github.com/soider/gocheck-pointers/checkers"
+	. "github.com/soider/gocheck-checkers/checkers"
 	. "gopkg.in/check.v1"
 	"testing"
 )

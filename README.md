@@ -1,14 +1,17 @@
 # About 
 
-Additional checker for gocheck library. This checker will try dereferencing each of passed argument and check for direct value equality.
-Checker uses reflect.DeepEquals inside for equality checks.
+Additional checkers collection for gocheck library. 
+Currently has only one checker - DeepEqualsPointer. 
+
+This checker acts like default DeepEquals but will try dereferencing each of passed argument and check for direct value equality instead of passed.
+Checker uses reflect.DeepEquals inside for equality checks as original.
 
 # Example
 
 ```
 package my_test
 import (
-	. "github.com/soider/gocheck-pointers/checkers"
+	. "github.com/soider/gocheck-checkers/checkers"
 	. "gopkg.in/check.v1"
 	"testing"
 )
